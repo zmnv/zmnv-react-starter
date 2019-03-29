@@ -1,0 +1,37 @@
+.flex-justify {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-justify--center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-vertical-center {
+  align-items: center;
+}
+
+.flex-no-shrink {
+  flex: 0 0 auto;
+}
+
+.flex-shrink-element {
+  flex: 0 auto;
+}
+
+.flex-shrink-expand {
+  flex: 1;
+}

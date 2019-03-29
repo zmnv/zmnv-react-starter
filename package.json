@@ -1,0 +1,53 @@
+{
+  "name": "au-eazy-designer",
+  "version": "1.1.0",
+  "description": "",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.dev.js --mode development",
+    "prod": "webpack --config ./webpack.config.prod.js --mode production",
+    "snap": "npm run prod && react-snapshot",
+    "cleaner": "node cleaner.js",
+    "rewriter": "node class-rewriter.js",
+    "build": "npm run snap && npm run cleaner && npm run rewriter",
+    "serve": "http-server ./build -o"
+  },
+  "keywords": [],
+  "author": "Valeriy Zimnev @zmnv",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.5.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^5.0.2",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "glob": "^7.1.3",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-inline-style-plugin": "^0.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "juice": "^5.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^2.0.0",
+    "react-hot-loader": "^4.8.0",
+    "react-snapshot": "^1.3.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  }
+}
