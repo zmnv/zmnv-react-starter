@@ -1,6 +1,6 @@
 {
-  "name": "au-eazy-designer",
-  "version": "1.1.0",
+  "name": "zmnv-react-starter",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.dev.js --mode development",
